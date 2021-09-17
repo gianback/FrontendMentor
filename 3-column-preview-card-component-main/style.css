@@ -1,0 +1,149 @@
+    :root{
+        --fdisplay:'Big Shoulders Display', cursive;
+        --flexand:'Lexend Deca', sans-serif;
+
+        /*colors*/
+        /* Primary */
+
+        --BrightOrange: hsl(31, 77%, 52%);
+        --DarkCyan: hsl(184, 100%, 22%);
+        --VeryDarkCyan: hsl(179, 100%, 13%);
+
+        /* Neutral */
+
+        --TransparenWhite: hsla(0, 0%, 100%, 0.75);  /* (paragraphs) parrafos */
+        --VeryLightGray: hsl(0, 0%, 95%); /* (background, headings, buttons) fondo, cabecera,botones*/
+    }
+
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+img{
+    max-width: 100%;
+}
+body{
+    font-size: 1.5rem;
+    background-color: var(--VeryLightGray);
+
+}
+.text-center{
+    text-align: center;
+}
+.no-margin{
+    margin: 0;
+}
+.no-padding{
+    padding: 0;
+}
+.contenedor{
+   margin: 10rem 2rem
+}
+.tarjetas{
+    
+}
+/** globals*/
+.titulo{
+    font-family: var(--fdisplay);
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--VeryLightGray);
+    margin-bottom: 3rem;
+   
+}
+.parrafo{
+    color: var(--TransparenWhite);
+    font-family: var(--flexand);
+    font-weight: 400;
+   /*  margin: 0 3rem 0 0; */
+    line-height: 2.5rem;
+   
+    
+}
+a{
+    text-decoration: none;
+    border-radius: 3rem;
+    padding: 1.5rem 3rem;
+    font-weight: 400;
+    font-family: var(--flexand);
+  
+}
+/**buttons**/
+.boton-1{
+    color: var(--BrightOrange);
+    background-color: var(--VeryLightGray);
+    font-weight: 700;
+}
+.btn-contenedor{
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    margin-top: 2rem;
+
+}
+/**/
+.tarjeta-1{
+    background-color: var(--BrightOrange);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    padding: 5rem;
+    
+}
+/* pictures */
+.imagen-contenedor{
+   
+    display: flex;
+    margin-bottom: 3rem;
+}
+/**/
+.tarjeta-2{
+    background-color: var(--DarkCyan);
+    padding: 5rem;
+}
+.boton-2{
+    color: var(--DarkCyan);
+    background-color: var(--VeryLightGray);
+    font-weight: 700;
+}
+
+/**/
+.tarjeta-3{
+    background-color: var(--VeryDarkCyan);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 5rem;
+}
+.boton-3{
+    color: var(--VeryDarkCyan);
+    background-color: var(--VeryLightGray);
+    font-weight: 700;
+    
+}
+@media(min-width:375px){
+    .contenedor{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .tarjetas{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 70%;
+    }
+    .tarjeta-1{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 1rem;
+       
+    }
+    
+    .tarjeta-3{
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 1rem;
+    }
+}
