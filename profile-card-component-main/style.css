@@ -1,0 +1,106 @@
+:root{
+    --fPrincipal:'Kumbh Sans', sans-serif;
+   /* Colors */
+
+    /* Primary */
+
+    --Darkcyan: hsl(185, 75%, 39%);
+    --VerydarkDesaturatedBlue: hsl(229, 23%, 23%);
+    --DarkGrayishBlue: hsl(227, 10%, 46%);
+
+    /* Neutral */
+
+    --DarkGray: hsl(0, 0%, 59%);
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--fPrincipal);
+    font-size: 1.8rem;
+    background-color: var(--Darkcyan);
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh
+
+}
+.centrar-texto{
+    text-align: center;
+}
+.no-margin{
+    margin: 0;
+}
+.no-padding{
+    padding: 0;
+}
+.contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.tarjeta{
+    margin: 27.8rem 0;
+    height: 37.2rem;
+    width: 32.4rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    
+}
+.contenedor-celeste{
+    height: 13.8rem;
+}
+.celeste{
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.contenedor-victor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.victor{
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-top: -5rem;
+}
+.tarjeta-mid{
+    margin-top: 7rem;
+}
+.nombre{
+    font-weight: 700;
+}
+.tarjeta-mid-top > p{
+    margin-bottom: 1rem;
+}
+
+.tarjeta-bot{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+.number{
+    font-weight: 700;
+    
+}
+.segundo, .primero, .tercero{
+    width: 100%;
+}
+.descripcion{
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+.opacity{
+    opacity: 0.25;
+    margin-bottom: 2rem;
+}
