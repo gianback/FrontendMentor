@@ -1,0 +1,123 @@
+:root{
+    /* Colors */
+
+    /* Primary */
+
+    --Cyan: hsl(179, 62%, 43%);
+    --BrightYellow: hsl(71, 73%, 54%);
+
+    /* Neutral */
+
+    --Light-Gray: hsl(204, 43%, 93%);
+    --GrayishBlue: hsl(218, 22%, 67%);
+}
+
+
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    font-size: 1.6rem;
+    font-family: 'Karla', sans-serif;
+    background-color: var(--Light-Gray);
+}
+.no-margin{
+    margin: 0%;
+}
+.contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.hero{
+    width: 31.2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.contenedor-1{
+    background-color: white;
+    width: 100%;
+    padding: 3.2rem;
+}
+/**contenedor-1**/
+.verde-oscuro{
+    color: var(--Cyan);
+    font-size: 2.3rem;
+    margin-bottom: 2.5rem;
+    font-weight: 700;
+}
+.verde-claro{
+    color: var(--BrightYellow);
+    font-size: 1.5rem;
+    font-weight: 700;
+
+}
+.parrafo{
+    color: var(--GrayishBlue);
+    line-height: 2.5rem;
+}
+/**contenedor-2**/
+
+.contenedor-2{
+    background-color: var(--Cyan);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem
+}
+
+.contenedor-2 > p > .number{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.plomo{
+    opacity: 0.50;
+}
+.boton{
+    background-color: var(--BrightYellow);
+    border-radius: 1rem;
+    display: block;
+    padding: 2rem;
+    width: 100%;
+    text-align: center;
+    margin: 2rem auto;
+    text-decoration: none;
+    color: white;
+}
+/**contenedor-3**/
+.contenedor-3{
+    background-color: var(--Cyan);
+    color: white;
+    opacity: 0.75;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.titulo-3{
+    margin-bottom: 2rem;
+}
+.contenedor-3 > li{
+    list-style: none;
+    display: inline-block;
+    opacity: 0.75;
+    line-height: 2rem;
+}
+
+@media(min-width:375px){
+    .hero{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 63.2rem;
+    }
+    .contenedor-1{
+        grid-column: 1/3;
+    }
+}
