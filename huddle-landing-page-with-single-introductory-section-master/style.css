@@ -1,0 +1,141 @@
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --SoftMagenta: hsl(300, 69%, 71%);
+    --FuenteHeading:'Poppins', sans-serif;
+    --FuenteBody:'Open Sans', sans-serif;
+    
+    
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    background-image: url(./images/bg-mobile.svg);
+    background-color: var(--Violet);
+    background-repeat: no-repeat;
+    color: white;
+    
+}
+.centrar-texto{
+    text-align: center;
+}
+.contenedor{
+    padding: 3rem;
+    height: 100vh;
+   
+}
+.logo-contenedor{
+    display: flex;
+    justify-content: flex-start;
+   margin-bottom: 5rem;
+    
+}
+.logo{
+    width: 13.8rem;
+}
+.principal{
+    display: grid;
+    grid-template-rows: 70% 30%;
+}
+.imagen-contenedor{
+   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.imagen{
+   
+   width:100%;
+}
+.iconos-contenedor{
+    display: flex;
+    justify-content: center;
+    margin: 3.5rem 0;
+    gap: 1rem;
+}
+.icono{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 1px solid white;
+    padding: .5rem;
+}
+.titulo{
+    font-family: var(--FuenteHeading);
+    font-size: 2.5rem;
+}
+.parrafo{
+    font-family: var(--FuenteBody);
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+    opacity: 0.75;
+    padding-bottom: 2rem;
+    
+}
+.boton-contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boton{
+    background: white;
+    color: var(--Violet);
+    font-family: var(--FuenteBody);
+    font-size: 1.7rem;
+    font-weight: 400;
+    padding: 1rem 6rem;
+    border-radius: 10rem;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 1px 3px 3px black ;
+}
+.boton:hover{
+    background-color: var(--SoftMagenta);
+    color: white;
+}
+@media(min-width:780px){
+    
+    body{
+        background-image: url(./images/bg-desktop.svg);
+    }
+    .contenedor{
+        padding: 8rem;
+    }
+    .principal{
+        display: grid;
+        grid-template-columns: 60% 40%;
+        column-gap: 3rem;
+    }
+    .logo{
+        width: 20rem;
+    }
+    .centrar-texto{
+        text-align: start;
+    }
+    .body-contenedor{
+        text-align: left;
+    }
+    .titulo{
+        font-size: 4rem;
+        font-weight: 600;
+    }
+    .parrafo{
+        font-size: 1.75rem;
+    }
+    .boton-contenedor{
+        justify-content: flex-start;
+    }
+    .boton{
+        font-weight: 600
+    }
+    .iconos-contenedor{
+        justify-content: flex-end;
+    }
+
+}
