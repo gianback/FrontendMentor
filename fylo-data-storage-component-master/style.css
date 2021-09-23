@@ -1,0 +1,212 @@
+:root{
+    --fuentePrincipal:'Raleway', sans-serif;
+    /*Colors*/
+
+    /* Primary */
+
+    --Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+
+     /* Neutral */
+
+    --Pale-Blue: hsl(243, 100%, 93%);
+    --Grayish-Blue: hsl(229, 7%, 55%);
+    --Dark-Blue: hsl(228, 56%, 26%);
+    --Very-Dark-Blue: hsl(229, 57%, 11%);
+
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;   
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    background-image: url(./images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: var(--fuentePrincipal); /*400-700*/
+    font-size: 1.4rem;
+    color:var(--Pale-Blue);
+    
+    
+}
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card{
+    width: 86%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*Utilitys*/
+.text-center{
+    text-align: center;
+}
+.no-margin{
+    margin: 0;
+}
+/**/
+.card-header{
+    background-color: var(--Dark-Blue);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    padding: 3rem 9rem 3rem 3rem;
+    border-radius: 1rem;
+    border-top-right-radius: 10rem  ;
+    width: 100%;
+}
+.logo{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 3rem;
+}
+.iconos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+.iconos-container{
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: var(--Very-Dark-Blue);
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+}
+.img{
+    width: 100%;
+}
+/*Fake button*/
+.card-body{
+    background-color: var(--Dark-Blue);
+    border-radius: 1rem;
+    padding: 3rem;
+    margin-top: 2rem;
+    width: 100%;
+    position: relative;
+}
+.blue-nigth{
+    background-color: var(--Very-Dark-Blue);
+    width: 100%;
+    height: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    padding:3px;
+    
+    
+    
+}
+.degraded{
+    width: 80%;
+    height: 1.3rem;
+    background-image: linear-gradient(90deg,hsl(6, 100%, 80%),hsl(335, 100%, 65%));
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1px;
+    border-radius: 5rem;
+    height: 1.5rem;
+
+}
+.ball{
+    width: 1.1rem;
+    height: 1.1rem;
+    background-color: white;
+    border-radius: 1rem;
+}
+.body-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.body-footer > p{
+    font-weight: 700;
+}
+.number-container{
+    position: absolute;
+    left: 50%;
+    top: 78%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+}
+.number{
+   
+    padding: 1.2rem 2rem;
+    position: relative;
+    flex-direction: row;
+    border-radius: 1rem;
+    background-color: white; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .6rem;
+
+    
+
+}
+.number-parrafo{
+    text-align: center;
+    color: #0c122c;
+    font-size: 4rem;
+}
+.min-font{
+    color: #848794;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@media(min-width:1440px){
+    body{
+        background-image: url(./images/bg-desktop.png);
+        background-size: contain;
+        background-position-y: bottom;
+        background-color: var(--Very-Dark-Blue);
+    }
+    .number-container{
+        left: unset;
+        right: 3rem;
+        top: -30%;
+    
+    }
+    .card{
+      flex-direction: row;
+      gap:4rem;
+    
+    }
+    .card-header{
+        max-width: 34.5rem; 
+    }
+    .card-body{
+        max-width: 53.8rem;
+    }
+    .number{
+        border-bottom-right-radius:0;    
+    }
+    .triangle{ 
+        display: block;
+        width: 0;
+        height: 0;
+        border-right: 10px solid white;
+        border-top: 10px solid white;
+        border-left: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+    }
+}
