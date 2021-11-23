@@ -1,0 +1,273 @@
+//Primary
+
+$Orange: hsl(26, 100%, 55%);
+$PaleOrange: hsl(25, 100%, 94%);
+
+//Neutral
+
+$Very-vark-blue: hsl(220, 13%, 13%);
+$Dark-grayish-blue: hsl(219, 9%, 45%);
+$Grayish-blue: hsl(220, 14%, 75%);
+$Light-grayish-blue: hsl(223, 64%, 98%);
+$White: hsl(0, 0%, 100%);
+$Black: hsl(0, 0%, 0%); //(with 75% opacity for lightbox background)
+
+//Typography
+
+//Body Copy
+$font-family: "Kumbh Sans", sans-serif;
+$font-size: 16px;
+//paragraph
+
+/* Globals */
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+a {
+  color: #000000;
+}
+.nav {
+  li {
+    list-style: none;
+  }
+}
+.img-avatar {
+  max-width: 3rem;
+  border-radius: 50%;
+}
+.img-avatar:hover {
+  border: 5px $Orange solid;
+}
+
+.logo {
+  width: 150px;
+}
+.flecha {
+  background-color: $White;
+  color: $Black;
+  border-radius: 50%;
+  padding: 1rem;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.container {
+  position: relative;
+}
+.secundario {
+  position: absolute;
+  right: 2%;
+  top: 0;
+}
+
+.ajuste {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.img-fluid {
+  border-radius: 5%;
+  height: 100%;
+}
+.img-carrito {
+  cursor: pointer;
+}
+
+.img-select {
+  /*  background: linear-gradient(rgba(255, 255, 255, 1)); */
+
+  z-index: 999999999;
+  border: 3px solid $Orange;
+  opacity: 0.5;
+}
+.modal {
+  background-color: rgba($color: #000000, $alpha: 0.75);
+}
+
+.card-title {
+  color: $Orange;
+  font-weight: bold;
+}
+.descuento {
+  color: $Orange;
+  padding: 0.3rem;
+  border-radius: 10%;
+  margin-left: 1rem;
+  background-color: $PaleOrange;
+  font-weight: bold;
+}
+.precio-real {
+  color: $Dark-grayish-blue;
+  text-decoration: line-through;
+  font-weight: bold;
+  font-size: 15px;
+  opacity: 0.5;
+}
+.card-text {
+  font-size: 20px;
+}
+.cantidad {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $Light-grayish-blue;
+  border-radius: 1rem;
+  padding: 15px;
+  font-size: $font-size;
+}
+
+.btn-carrito {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  color: white;
+  background-color: $Orange;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 20px 0;
+  border: none;
+  border-radius: 1rem;
+}
+.signo {
+  color: $Orange;
+
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 1;
+}
+
+.img-sm-modal {
+  cursor: pointer;
+}
+.img-chicos {
+  cursor: pointer;
+}
+.arrow-right {
+  position: absolute;
+  right: 0;
+}
+.arrow-left {
+  position: absolute;
+  left: 0;
+}
+.btn-close {
+  opacity: 1;
+  background-color: $White;
+}
+
+.img-carrito {
+  cursor: pointer;
+}
+.carrito-compra {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.cantidad_carrito {
+  position: absolute;
+  font-size: 15px;
+  color: white;
+  top: 1.5%;
+  right: 0;
+  padding: 0 2px;
+  border-radius: 10rem;
+  background-color: $Orange;
+}
+.car-open {
+  background-color: $Light-grayish-blue;
+  width: 300px;
+  /* height: 80px; */
+  position: absolute;
+  right: 25px;
+  top: 55px;
+  z-index: 10000;
+}
+.img-cart {
+  height: 50px;
+  border-radius: 10%;
+}
+
+.contenido-principal {
+  margin: auto 0;
+}
+.btn-negro {
+  padding: 3px;
+  background-color: transparent;
+  border: none;
+}
+.dark_mode {
+  background-color: $Black;
+  color: $Orange !important;
+  header {
+    background-color: $Orange;
+  }
+  .cantidad_carrito {
+    color: $White;
+  }
+}
+.img-basura {
+  cursor: pointer;
+}
+.header {
+  padding: 10px 0;
+}
+
+.nav-link {
+  border-bottom: 3px solid transparent;
+}
+.nav-link:hover {
+  border-bottom: 3px $Orange solid;
+  font-weight: 700;
+}
+
+#hamburguesa {
+  position: fixed;
+  z-index: 99;
+  background-color: $Black;
+  opacity: 0.75;
+  width: 100%;
+  min-height: 100vh;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.menu-contenedor {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $White;
+  z-index: 99999;
+  font-weight: bold;
+  min-height: 100vh;
+  width: 70vw;
+  opacity: 1;
+}
+.btn-cierre-menu {
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.btn-cierre-menu:hover {
+  color: $Orange;
+}
